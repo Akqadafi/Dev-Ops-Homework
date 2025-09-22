@@ -4,8 +4,7 @@
 
 Access AWS Cloud
 1.Log into AS,
-
-&nbsp;	 AMI user preferably, Root User if necessary.
+   a.AMI user preferably, Root User if necessary.
 
 2\. Go to dashboard
 
@@ -67,6 +66,7 @@ Test the Server
 &nbsp;	a.Check that the correct security group is attached.
 
 &nbsp;	b.Confirm the Inbound Rules include HTTP, source set to Anywhere-IPv4.
+
 
 
 
