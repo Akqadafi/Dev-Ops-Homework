@@ -1,0 +1,25 @@
+| Subnet Name | Purpose | CIDR            | Mask          | N.Va       |
+| ----------- | ------- | ----------------| --------------| ---------- |
+| Public-1    | Public  | 172.16.0.0/16   | 255.255.0.0 | us-east-1a |
+| Public-2    | Public  | 172.16.1.0/24   | 255.255.255.0 | us-east-1b |
+| Public-3    | Public  | 172.16.2.0/24   | 255.255.255.0 | us-east-1c |
+| Private-1   | Private | 172.16.11.0/24   | 255.255.255.0 | us-east-1a |
+| Private-2   | Private | 172.16.12.0/24   | 255.255.255.0 | us-east-1b |
+| Private-3   | Private | 172.16.13.0/24   | 255.255.255.0 | us-east-1c |
+| Private-1   | Private | 172.16.21.0/24   | 255.255.255.0 | us-east-1a |
+| Private-2   | Private | 172.16.22.0/24   | 255.255.255.0 | us-east-1b |
+| Private-3   | Private | 172.16.23.0/24   | 255.255.255.0 | us-east-1c |
+
+
+Notes:
+Making a custom VPC
+1. Plan your architecture
+	CIDR Range: Easy way to list a range of IP addresses
+	SET VPC CIDR range: All subnets in this range
+        Set subnets-Placed in Availability Zones
+Public: Full access to internet
+Private: Limited or no access to the internet
+Set VPC CIDR Range: 10.10.0.0/16
+
+	
+	
