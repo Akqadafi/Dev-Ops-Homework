@@ -1,0 +1,45 @@
+[200~9-23-25 — Git Bash + GitHub Notes (Class 7, Week 3)
+
+QUICK START
+• Open Git Bash (Windows) or Terminal (macOS).
+• We’re using the command line to navigate folders and manage files, and to push files to GitHub.
+
+BASIC SHELL COMMANDS
+• pwd                  # print working directory (where am I?)
+• ls                   # list files/folders in the current directory
+• clear                # wipe the screen
+• cd <path>            # change directory (move to another folder)
+• cd ..                # go back one directory
+• Tab                  # auto-complete paths
+• Example path: cd documents/theowaf/class7/aws
+
+FILE / FOLDER COMMANDS
+• mkdir <name>         # make a directory
+• touch <file>         # create a file (e.g., touch lizzo.txt)
+• rm <file>            # remove a file (e.g., rm Lizzo.txt)
+• rmdir <dir>          # remove an empty directory
+
+SET UP GIT (one-time, global)
+git config --global user.name  Your Full Name
+git config --global user.email your.email@example.com
+
+MAKE A NEW REPO + FIRST COMMIT (from inside your project folder)
+echo # 9.23.25_class7_1 >> README.md
+git init
+git add README.md
+git commit -m first commit
+git branch -M main
+git remote add origin https://github.com/<USER>/<REPO>.git
+git push -u origin main
+
+NOTES / REMINDERS
+• “catch it on the rewind” — theo (rob o.)
+• Six figures every month; go where you are celebrated.
+
+VISION (personal prompts captured from class)
+• Destination ideas: Dubai, Colombia, Brazil, or somewhere sunny.
+• Target net income: 50,000.
+• Dream home abroad: ~10,000 sq ft, modern design, lots of sunlight, gated community.
+• Nice modern design, 6-car garage, luxury/sports cars and SUVs.
+
+~
