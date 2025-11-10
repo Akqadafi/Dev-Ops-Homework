@@ -1,0 +1,93 @@
+
+1. What You’ll Build and How You’ll Run It
+
+You’ll create a small Terraform project (two files), initialize Terraform in that folder, and validate the config. You’ll use Git Bash and VS Code, not PowerShell or “random” editors.
+
+2. Install the Correct Programs
+
+* Terraform CLI
+* Gitbash
+* VS Code
+
+3. Create a Working Folder
+
+1. Go to **Start** and type in **Gitbash(DON'T USE POWERSHELL)
+2. Click to **Run as Administrator**
+3. run aws sts get-caller-identity to authenticate AWS.
+4. Use the `cd` command to move to desired directory
+5. Create a folder for your Terraform files using the `mkdir` command. Give it a suitable name (include the date)
+6. Use the `pwd` command to ensure you are in the right folder
+
+4. Create Authentication File
+
+1. Create a file with this command:
+   `touch 0-auth.tf`
+2. Run `ls` to check file is created
+3. Run `pwd` to double check you are in the right folder
+
+5. Open VS Code in the Folder*
+
+1. Type `code .`
+2. Go to:
+   [https://github.com/Akqadafi/Class7-notes/blob/main/102125/00-auth.tf](https://github.com/Akqadafi/Class7-notes/blob/main/102125/00-auth.tf)
+3. Copy the code located in the GitHub
+4. Paste the code into the file **"00-auth.tf"** file
+5. Press **Ctrl+S** to save (**VERY Important**)
+6. Run `cat 0-auth.tf` to ensure you copied the correct code
+
+6. Initialize File
+
+1. Open a terminal in VS Code
+
+   * At the top of VS Code, click the three dots to open a dropdown
+   * Click **“New Terminal”** or use shortcut **Ctrl+Shift+`**
+   * Select **Gitbash** from the terminal dropdown
+2. Run `ls` to check on files in folder
+3. Run `terraform --version` to ensure you have Terraform installed
+
+7. Run Initialization Commands
+
+1. Run:
+   `Terraform Init`
+2. You are successful if several new files show up in the folder:
+
+   * A folder named **.terraform
+   * A file named **.terraform.lock.hcl
+   * **DO NOT TOUCH THESE FILES!
+
+8. Download Gitignore File
+
+In the terminal, run the following command:
+
+```bash
+curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore
+```
+
+DO NOT TOUCH THE GITIGNORE FILE!
+
+Run:
+`ls -a -ln`
+to see all your files.
+
+9. Validate and Apply Terraform
+
+1. In terminal, run `terraform validate`
+
+    Success message: “Success! The configuration is valid”
+2. Run `terraform plan`
+3. Run `terraform apply`
+
+   * Success should produce a **terraform.tfstate** file in the folder
+   * The **terraform.tfstate** file is very sensitive. **DO NOT TOUCH THIS FILE!**
+
+10. Verify Your Files
+
+Run `ls` to check your files.
+You should have:
+
+* 0-auth.tf
+* .terraform.lock.hcl
+* terraform.tfstate
+* .terraform folder
+
+
